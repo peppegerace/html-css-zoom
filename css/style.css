@@ -4,6 +4,33 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+.justify-content-end {
+  justify-content: end;
+}
+
+
 /*PAGE STRUCTURE */
 .row-top {
   width: 100%;
@@ -29,8 +56,21 @@ main {
 }
 
 .card {
-  width: 220px;
-  height: 125px;
+  width: 300px;
+  height: 200px;
   background-color: white;
   margin: 2px;
+}
+
+/* ROW-TOP */
+.row-top a {
+  background-color: #484848;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.row-top a i {
+  margin-right: 5px;
 }
