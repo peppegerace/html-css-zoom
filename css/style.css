@@ -19,6 +19,12 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .d-flex {
   display: flex;
 }
@@ -26,10 +32,14 @@ li {
 .flex-row {
   flex-direction: row;
 }
+
 .justify-content-end {
   justify-content: end;
 }
 
+.center {
+  justify-content: center;
+}
 
 /*PAGE STRUCTURE */
 .row-top {
@@ -44,22 +54,14 @@ main {
   background-color: black;
   overflow: auto;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-
+  justify-content: center;
 }
 
 .row-bottom {
   width: 100%;
   height: 80px;
   background-color: chocolate;
-}
-
-.card {
-  width: 300px;
-  height: 200px;
-  background-color: white;
-  margin: 2px;
 }
 
 /* ROW-TOP */
@@ -73,4 +75,25 @@ main {
 
 .row-top a i {
   margin-right: 5px;
+}
+
+/* MAIN */
+.box-card {
+  width: 300px;
+  height: 200px;
+}
+
+.card {
+  position: relative;
+  width: 295px;
+  height: 195px;
+}
+.card .name {
+  display: inline-block;
+  background-color: rgba(152, 152, 152, 0.5);
+  padding: 5px;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
 }
